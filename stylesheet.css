@@ -220,24 +220,31 @@ main .container {
   text-align: center;
 }
 
-.fitur-atas{
+.fitur-atas {
   display: flex;
   align-items: center;
 }
-.Ket-Gambar{
- padding-right: 100px;
-}
-.keterangan p {
-  text-align: center;;
+.Ket-Gambar {
+  padding-right: 100px;
 }
 
-.fitur-bawah{
+.fitur-atas .Ket-Gambar p {
+  text-align: left;
+}
+.Ket-Gambar p {
+  text-align: right;
+}
+
+.keterangan p {
+  text-align: center;
+}
+
+.fitur-bawah {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
 }
-.Ket-Gambar{
- padding-right: 100px;
-}
+
 .keterangan p {
-  text-align: center;;
+  text-align: center;
 }
