@@ -6,6 +6,7 @@
 
 body {
   background: rgba(250, 249, 255, 1);
+  
 }
 
 .container {
@@ -31,7 +32,7 @@ header {
 
 .navbar {
   display: flex;
-  gap: 50px;
+  gap: 100px;
 }
 
 .navbar a {
@@ -247,4 +248,61 @@ main .container {
 
 .keterangan p {
   text-align: center;
+}
+
+.container {
+  width: 85vw;
+  margin: auto;
+  flex: 1;
+}
+
+footer {
+  padding: 40px 0;
+  background-color: rgb(130, 130, 130);
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  position: static;
+  width: 100%;
+  margin-top: 100px;
+
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-bottom {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-bottom a:hover {
+  color: red;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.footer-logo h1 {
+  font-size: 24px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 100px;
 }
