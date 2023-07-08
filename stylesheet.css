@@ -6,7 +6,6 @@
 
 body {
   background: rgba(250, 249, 255, 1);
-  
 }
 
 .container {
@@ -59,8 +58,13 @@ header {
   font-size: 24px;
 }
 
+.tombol {
+  display: flex;
+  gap: 25px;
+}
+
 .Login {
-  margin-right: 10px;
+  /* margin-right: 10px; */
   display: inline-block;
   padding: 10px 20px;
   font-size: 12px;
@@ -89,7 +93,7 @@ header {
 }
 
 .SignUp {
-  margin-left: 10px;
+  /* margin-left: 10px; */
   display: inline-block;
   padding: 10px 20px;
   font-size: 12px;
@@ -120,13 +124,14 @@ header {
 main .container {
   display: flex;
   justify-content: center;
-  padding: 350px 150px 0px;
+  padding: 150px 150px 0px;
 }
 
 .Home {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 200px;
 }
 .Home p {
   font-style: italic;
@@ -134,8 +139,7 @@ main .container {
   font-size: 36px;
   text-align: center;
 }
-
-.Home .SignUpHome {
+.SignUpHome {
   width: 302px;
   margin: 80px 200px;
   display: inline-block;
@@ -152,14 +156,14 @@ main .container {
   transition: all 0.3s ease;
 }
 
-.Home .SignUpHome:hover {
+.SignUpHome:hover {
   background-color: #fff;
   color: #ff5252;
   border: 2px solid #ff5252;
   box-shadow: 5px 5px 0px #ff5252;
 }
 
-.Home .SignUpHome:active {
+.SignUpHome:active {
   background-color: #fcf414;
   box-shadow: none;
   transform: translateY(4px);
@@ -258,13 +262,12 @@ main .container {
 
 footer {
   padding: 40px 0;
-  background-color: rgb(130, 130, 130);
+  background-color: rgba(250, 249, 255, 1);
   box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
   z-index: 999;
   position: static;
   width: 100%;
   margin-top: 100px;
-
 }
 
 .footer-content {
@@ -304,5 +307,11 @@ footer {
 
 .footer-social {
   display: flex;
-  gap: 100px;
+  gap: 24px;
+  align-items: center;
+}
+
+.Logo-Sosial {
+  display: flex;
+  gap: 25px;
 }
