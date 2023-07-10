@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="./src/stylesheet.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
@@ -11,7 +11,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header id="navbar" class="">
       <div class="container">
         <div class="header">
           <div class="logo">
@@ -19,10 +19,10 @@
             <h1>Finance</h1>
           </div>
           <div class="navbar">
-            <a href="">Home</a>
-            <a href="">Feature</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
+            <a href="#Home">Home</a>
+            <a href="#Feature">Feature</a>
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
           </div>
           <div class="tombol">
             <button class="Login">Login</button>
@@ -32,17 +32,17 @@
       </div>
     </header>
     <main>
-      <div class="container">
-        <div class="Home">
+      <div id="Home" class="container">
+        <article class="Home">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
             impedit fuga rerum, ipsam minus ipsum!
           </p>
           <button class="SignUpHome">SignUp</button>
-        </div>
+        </article>
       </div>
-      <div class="container">
-        <div class="konten">
+      <div id="Feature" class="container">
+        <article class="konten">
           <div class="atas">
             <img
               src="/public/images/whats-app-image-20230502-at-23181.png"
@@ -55,7 +55,7 @@
           </div>
           <div class="bawah">
             <div class="menu">
-              <p>MENU</p>
+              <p>Feature</p>
             </div>
             <div class="menu-grup">
               <div class="menu-konten">
@@ -76,10 +76,10 @@
               </div>
             </div>
           </div>
-        </div>
+        </article>
       </div>
       <div class="container">
-        <div class="Fitur">
+        <article class="Fitur">
           <div class="fitur-atas">
             <div class="Ket-Gambar">
               <p>PENDIDIKAN</p>
@@ -114,10 +114,10 @@
               </p>
             </div>
           </div>
-        </div>
+        </article>
       </div>
       <div class="container">
-        <div class="Fitur">
+        <article class="Fitur">
           <div class="fitur-atas">
             <div class="Ket-Gambar">
               <p>CATATAN</p>
@@ -152,12 +152,17 @@
               </p>
             </div>
           </div>
-        </div>
+        </article>
       </div>
-      <aside></aside>
+      <aside>
+        <form id="search-form" action="#">
+          <input type="text" id="search-input" placeholder="Cari di sini..." />
+          <button type="submit">Cari</button>
+        </form>
+      </aside>
     </main>
     <footer>
-      <div class="container">
+      <div id="Contact" class="container">
         <div class="footer-content">
           <div class="footer-logo">
             <img src="./public/images/logo.svg" alt="Logo" />
@@ -183,5 +188,6 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="./src/index.js"></script>
   </body>
 </html>

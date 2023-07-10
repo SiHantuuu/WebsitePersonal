@@ -1,3 +1,8 @@
+/* 
+body, html {
+  overflow-x:hidden;
+  }
+   */
 * {
   margin: 0;
   padding: 0;
@@ -18,9 +23,9 @@ header {
   background-color: rgba(250, 249, 255, 1);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 999;
-  position: fixed;
-  top: 0px;
   width: 100%;
+  position: absolute;
+  top: 0;
 }
 
 .header {
@@ -41,6 +46,12 @@ header {
 
 .navbar a:hover {
   color: red;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: antiquewhite;
 }
 
 .logo {
@@ -169,11 +180,11 @@ main .container {
   transform: translateY(4px);
 }
 
-.container-konten {
+/* .container-konten {
   display: flex;
   justify-content: center;
   padding: 0px 150px;
-}
+} */
 
 .content {
   display: flex;
@@ -259,6 +270,53 @@ main .container {
   margin: auto;
   flex: 1;
 }
+
+aside {
+  margin: 20px;
+  display: flex;
+
+  flex-direction: column;
+}
+
+#search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-input {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+#search-form button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#search-form button:hover {
+  background-color: #0069d9;
+}
+#search-results {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  
+}
+
+
 
 footer {
   padding: 40px 0;
