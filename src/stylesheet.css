@@ -313,10 +313,46 @@ aside {
   display: flex;
   justify-content: center;
   align-content: center;
-  
 }
 
+.about {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
 
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 25px 0px;
+}
+
+.button {
+  display: flex;
+}
+
+.button a {
+  background-color: #5a0894;
+  color: white;
+  padding: 12px 40px;
+  text-decoration: none;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+}
+.button a:hover {
+  background-color: red;
+  color: white;
+}
+
+.social {
+  display: flex;
+  gap: 25px;
+  padding: 20px 0px;
+  padding-left: 9%;
+}
 
 footer {
   padding: 40px 0;
