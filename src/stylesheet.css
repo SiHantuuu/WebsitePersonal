@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -208,24 +209,40 @@ main .container {
 .atas p {
   text-align: center;
   display: flex;
-  font-size: 34px;
+  font-size: 28px;
+  text-align: justify;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  color: rgba(231, 70, 70, 1);
+  color: rgba(194, 58, 58, 1);
 }
 
-.konten .square {
+.konten .square-1 {
   height: 5%;
   margin-bottom: 50px;
   width: 100%;
-  border-radius: 50px;
   background-color: rgba(231, 70, 70, 1);
+}
+
+.konten .square-2 {
+  height: 5%;
+  margin-bottom: 50px;
+  width: 60%;
+  background-color: rgba(231, 70, 70, 1);
+  margin-left: 40%;
+}
+
+.konten .square-3 {
+  height: 5%;
+  margin-bottom: 150px;
+  width: 40%;
+  background-color: rgba(231, 70, 70, 1);
+  margin-left: 60%;
 }
 
 .menu {
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: first baseline;
 }
 
 .menu p {
@@ -234,9 +251,8 @@ main .container {
   background-color: rgba(231, 70, 70, 1);
   color: rgb(255, 252, 233);
   font-family: "Poppins", sans-serif;
-  border-radius: 64px;
-  padding: 0px 50px;
-  letter-spacing: 25px;
+  padding: 0px 200px;
+  letter-spacing: 15px;
   box-shadow: 4px 5px 0px #0000005a;
 }
 
@@ -284,16 +300,26 @@ main .container {
 
 .fitur-atas .Ket-Gambar p {
   text-align: center;
-  font-size: 24px;
-  font-weight: bold;
+
 }
 .Ket-Gambar p {
-  text-align: right;
-}
+  margin-left: 10px;
+  padding: 20px 80px;
+  background-color: rgba(250, 152, 132, 1);
+  color: rgb(255, 252, 233);
+  border: none;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 4px 5px 0px rgba(231, 70, 70, 1);
+  letter-spacing: 10px;
+  font-weight: bold;
+  font-size: 30px;
+} 
 
 .keterangan p {
   text-align: center;
   font-size: 21px;
+  font-weight: bold;
 }
 
 .fitur-bawah {
@@ -395,8 +421,10 @@ aside {
 
 .left .content h3 {
   margin-top: 20px;
-  color: #5a0894;
+  color: rgba(194, 58, 58, 1);
   font-size: 22px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
 }
 
 .left .content p {
