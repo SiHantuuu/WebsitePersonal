@@ -31,11 +31,6 @@ document
   });
 
 function searchContent(query) {
-  // Ganti dengan logika pencarian sesuai dengan konten di website Anda
-  // Misalnya, jika kontennya adalah daftar artikel, Anda dapat mencari di judul atau isi artikel dan mengembalikan hasil yang sesuai.
-  // Anda dapat menggunakan metode seperti filter() pada array atau eksekusi pencarian melalui API jika diperlukan.
-  // Contoh sederhana berikut ini hanya mencocokkan query dengan kata-kata dalam array.
-
   var content = [
     "Lorem ipsum dolor sit amet",
     "Consectetur adipiscing elit",
@@ -60,7 +55,7 @@ function displaySearchResults(results) {
 
   if (results.length > 0) {
     results.forEach(function (result) {
-      var resultItem = document.createElement("p"); // Mengganti elemen <div> dengan <p>
+      var resultItem = document.createElement("p");
       resultItem.textContent = result;
       resultsContainer.appendChild(resultItem);
     });

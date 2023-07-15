@@ -1,16 +1,13 @@
-/* 
-body, html {
-  overflow-x:hidden;
-  }
-   */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
 }
 
 body {
-  background: rgba(250, 249, 255, 1);
+  background: rgba(255, 229, 202, 1);
 }
 
 .container {
@@ -20,7 +17,7 @@ body {
 
 header {
   padding: 30px 0;
-  background-color: rgba(250, 249, 255, 1);
+  background-color: rgba(255, 246, 195, 0);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 999;
   width: 100%;
@@ -34,24 +31,38 @@ header {
   align-items: center;
 }
 
+.logo {
+  font-size: 23px;
+}
+
 .navbar {
   display: flex;
   gap: 100px;
+
+  align-content: center;
+}
+
+.navbar p {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
 }
 
 .navbar a {
   text-decoration: none;
-  color: black;
+  color: rgba(231, 70, 70, 1);
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar a:hover {
-  color: red;
+  color: rgb(231, 132, 70);
 }
 
 .sticky {
   position: fixed;
   top: 0;
-  background-color: antiquewhite;
+  background-color: rgb(255, 252, 233);
 }
 
 .logo {
@@ -75,26 +86,26 @@ header {
 }
 
 .Login {
-  /* margin-right: 10px; */
   display: inline-block;
   padding: 10px 20px;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  color: #fff;
-  background-color: #ff5252;
-  border: 2px solid #000;
-  border-radius: 10px;
-  box-shadow: 5px 5px 0px #000;
+  color: rgb(255, 252, 233);
+  background-color: rgba(231, 70, 70, 1);
+  border: 0px;
+  border-radius: 36px;
+  box-shadow: 4px 5px 0px #0000005a;
   transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
 }
 
 .Login:hover {
-  background-color: #fff;
-  color: #ff5252;
-  border: 2px solid #ff5252;
-  box-shadow: 5px 5px 0px #ff5252;
+  background-color: rgb(255, 252, 233);
+  color: #f35a5a;
+  border: 0px;
+  box-shadow: 5px 5px 0px #f35a5a;
 }
 
 .Login:active {
@@ -104,26 +115,26 @@ header {
 }
 
 .SignUp {
-  /* margin-left: 10px; */
   display: inline-block;
   padding: 10px 20px;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  color: #fff;
-  background-color: #ff5252;
-  border: 2px solid #000;
-  border-radius: 10px;
-  box-shadow: 5px 5px 0px #000;
+  color: rgb(255, 252, 233);
+  background-color: rgba(231, 70, 70, 1);
+  border: 0px;
+  border-radius: 36px;
+  box-shadow: 4px 5px 0px #0000005a;
   transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
 }
 
 .SignUp:hover {
-  background-color: #fff;
-  color: #ff5252;
-  border: 2px solid #ff5252;
-  box-shadow: 5px 5px 0px #ff5252;
+  background-color: rgb(255, 252, 233);
+  color: #f35a5a;
+  border: 0px;
+  box-shadow: 5px 5px 0px #f35a5a;
 }
 
 .SignUp:active {
@@ -142,36 +153,38 @@ main .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 200px;
+  padding: 100px 150px 0px;
 }
 .Home p {
-  font-style: italic;
   font-weight: 800;
-  font-size: 36px;
+  font-size: 35px;
   text-align: center;
+  color: rgba(231, 70, 70, 1);
+  font-family: "Poppins", sans-serif;
 }
 .SignUpHome {
   width: 302px;
   margin: 80px 200px;
   display: inline-block;
-  padding: 20px 100px;
-  font-size: 12px;
+  padding: 10px 100px;
+  font-size: 22px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  color: #fff;
-  background-color: #ff5252;
-  border: 2px solid #000;
-  border-radius: 10px;
-  box-shadow: 5px 5px 0px #000;
+  color: rgb(255, 252, 233);
+  background-color: rgba(231, 70, 70, 1);
+  border: 0px;
+  border-radius: 36px;
+  box-shadow: 4px 5px 0px #0000005a;
   transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
 }
 
 .SignUpHome:hover {
-  background-color: #fff;
-  color: #ff5252;
-  border: 2px solid #ff5252;
-  box-shadow: 5px 5px 0px #ff5252;
+  background-color: rgb(255, 252, 233);
+  color: #f35a5a;
+  border: 0px;
+  box-shadow: 5px 5px 0px #f35a5a;
 }
 
 .SignUpHome:active {
@@ -179,12 +192,6 @@ main .container {
   box-shadow: none;
   transform: translateY(4px);
 }
-
-/* .container-konten {
-  display: flex;
-  justify-content: center;
-  padding: 0px 150px;
-} */
 
 .content {
   display: flex;
@@ -194,22 +201,43 @@ main .container {
 .atas {
   display: flex;
   align-items: center;
+  margin-bottom: -33px;
+  margin-top: -50px;
 }
 
 .atas p {
   text-align: center;
-  font-size: 36px;
+  display: flex;
+  font-size: 34px;
   font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: rgba(231, 70, 70, 1);
+}
+
+.konten .square {
+  height: 5%;
+  margin-bottom: 50px;
+  width: 100%;
+  border-radius: 50px;
+  background-color: rgba(231, 70, 70, 1);
 }
 
 .menu {
   text-align: center;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .menu p {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 60px;
+  font-weight: 650;
+  background-color: rgba(231, 70, 70, 1);
+  color: rgb(255, 252, 233);
+  font-family: "Poppins", sans-serif;
+  border-radius: 64px;
+  padding: 0px 50px;
+  letter-spacing: 25px;
+  box-shadow: 4px 5px 0px #0000005a;
 }
 
 .menu-grup {
@@ -217,23 +245,33 @@ main .container {
   justify-content: center;
   gap: 100px;
   margin-top: 32px;
-  background: #0071eb;
+  background: rgba(250, 152, 132, 1);
   border-radius: 64px;
   padding: 40px 30px;
+  margin-bottom: 150px;
 }
 
 .menu-konten img {
-  height: 134px;
+  height: 200px;
+  width: 200px;
+  border-radius: 29px;
 }
 
 .menu-konten {
-  background-color: #ff0000;
+  background-color: rgba(250, 152, 132, 1);
   padding: 20px 20px;
-  border-radius: 29px;
+  border-radius: 15px;
 }
 
 .menu-konten p {
   text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: rgba(231, 70, 70, 1);
+  background-color: rgba(255, 243, 226, 1);
+  border-radius: 50px;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
 .fitur-atas {
@@ -245,7 +283,9 @@ main .container {
 }
 
 .fitur-atas .Ket-Gambar p {
-  text-align: left;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 .Ket-Gambar p {
   text-align: right;
@@ -253,6 +293,7 @@ main .container {
 
 .keterangan p {
   text-align: center;
+  font-size: 21px;
 }
 
 .fitur-bawah {
@@ -260,9 +301,15 @@ main .container {
   align-items: center;
   flex-direction: row-reverse;
 }
+.fitur-bawah .Ket-Gambar p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
 
 .keterangan p {
   text-align: center;
+  color: rgba(194, 58, 58, 1);
 }
 
 .container {
@@ -282,32 +329,38 @@ aside {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Poppins", sans-serif;
 }
 
 #search-input {
   width: 200px;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 25px;
+  text-align: center;
 }
 
 #search-input:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #5a0894;
 }
 
 #search-form button {
   margin-left: 10px;
   padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: rgba(231, 70, 70, 1);
+  color: rgb(255, 252, 233);
   border: none;
-  border-radius: 4px;
+  border-radius: 25px;
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
 }
 
 #search-form button:hover {
-  background-color: #0069d9;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: rgba(231, 70, 70, 1);
 }
 #search-results {
   display: flex;
@@ -321,42 +374,76 @@ aside {
   align-items: center;
 }
 
+.title {
+  color: rgba(194, 58, 58, 1);
+  letter-spacing: 15px;
+}
+
+.about p {
+  color: rgba(194, 58, 58, 1);
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
 .left {
-  display: flex;
-  flex-direction: column;
+  display: flexbox;
+}
+
+.left .content h3 {
+  margin-top: 20px;
+  color: #5a0894;
+  font-size: 22px;
+}
+
+.left .content p {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 20px;
 }
 
 .content {
   padding: 25px 0px;
 }
 
-.button {
-  display: flex;
-}
-
 .button a {
-  background-color: #5a0894;
-  color: white;
+  background-color: rgba(231, 70, 70, 1);
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
   padding: 12px 40px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 1.5px;
+  border-radius: 25px;
+  box-shadow: 4px 5px 0px #0000005a;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
 }
 .button a:hover {
-  background-color: red;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgba(231, 70, 70, 1);
 }
 
-.social {
-  display: flex;
-  gap: 25px;
-  padding: 20px 0px;
-  padding-left: 9%;
+.link {
+  padding-left: 25px;
+}
+
+.link i {
+  color: rgba(231, 70, 70, 1);
+  font-size: 30px;
+  padding: 30px 10px;
+}
+
+.link i:hover {
+  color: #a5a5a572;
 }
 
 footer {
   padding: 40px 0;
-  background-color: rgba(250, 249, 255, 1);
+  background-color: rgba(255, 229, 202, 1);
   box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
   z-index: 999;
   position: static;
@@ -380,8 +467,8 @@ footer {
   color: black;
 }
 
-.footer-bottom a:hover {
-  color: red;
+.footer-bottom p {
+  font-family: "Poppins", sans-serif;
 }
 
 .footer-logo {
@@ -404,8 +491,19 @@ footer {
   gap: 24px;
   align-items: center;
 }
+.footer-social p {
+  font-family: "Poppins", sans-serif;
+}
 
 .Logo-Sosial {
   display: flex;
   gap: 25px;
+}
+
+.footer-social i {
+  color: rgba(231, 70, 70, 1);
+}
+
+.footer-social i:hover {
+  color: #a5a5a572;
 }
